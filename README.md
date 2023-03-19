@@ -1,5 +1,5 @@
 # Blackjack Game
-## Projeto em java Swing do famoso jogo Blackjack e também conhecido como 21.
+## Projeto em java Swing do famoso jogo Blackjack também conhecido como 21.
 O projeto ainda precisa de ajustes nos gráfico, na dinâmica e lógica do jogo e algumas abstrações.
 Faltando também terminar o javadoc.
 
