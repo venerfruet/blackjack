@@ -34,7 +34,6 @@ public class Cheap {
 		rnd = new Random();
 
 		container.removeAll();
-		container.removeAll();
 
 		dialerCards(container);
 
