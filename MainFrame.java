@@ -4,6 +4,7 @@ import java.awt.Dimension;
 import java.awt.Image;
 import java.awt.Toolkit;
 
+import javax.swing.GroupLayout;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -17,7 +18,7 @@ import java.awt.BorderLayout;
  * Tela principal
  * 
  * @author Vener Fruet da Silveira
- * @version 2023-03-19
+ * @version 2023-03-20
  */
 
 public class MainFrame extends JFrame {
@@ -41,13 +42,13 @@ public class MainFrame extends JFrame {
 		setFocusable(true);
 
 		// imagem da mesa do jogo
-		ImagePanel imagePanel = new ImagePanel(Environments.IMAGE_TABLE_SRC, null, Environments.MAIN_FRAME_DIMENSION,
+		ImagePanel imagePanel = new ImagePanel(Environments.IMAGE_TABLE_SRC, new BorderLayout(), Environments.MAIN_FRAME_DIMENSION,
 				null, true);
-		imagePanel.setLayout(new BorderLayout());
 
 		// container de cartas
 		JPanel panelCards = new JPanel();
 		panelCards.setPreferredSize(new Dimension(800, 440));
+		panelCards.setLayout(new GroupLayout(panelCards));
 		panelCards.setOpaque(false);
 
 		// container dos comandos
